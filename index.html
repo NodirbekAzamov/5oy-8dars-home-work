@@ -28,7 +28,7 @@
                 </div>
                 <div class="card-body">
                     <input type="text" id="text" class="form-control my-3" placeholder="Enter your text">
-                    <button class="btn btn-primary my-3" onclick="addList()" >button</button>
+                    <button class="btn btn-primary my-3" onclick="addList()">button</button>
                     <ul id="lists">
 
                     </ul>
@@ -44,7 +44,7 @@
                 <div>
                     <textarea id="textarea" class="w-50 text-center" cols="30" rows="10"></textarea>
                     <button class="btn btn-primary" id="compute">Compute the words</button>
-                    <button class="btn btn-danger" id="delete" >Delete</button>
+                    <button class="btn btn-danger" id="delete">Delete</button>
                 </div>
                 <p class="fs-6 my-3">number of words in the text: <span id="textt"></span> </p>
             </div>
@@ -56,8 +56,8 @@
         <!-- 3chi masala -->
         <div class="row my-5">
             <div class="col-md-9 offset-2">
-                <textarea  id="textarea1" class="w-50 text-center" cols="30" rows="10"></textarea>
-                <input type="text" id="inp" placeholder="text">
+                <textarea id="textarea1" class="w-50 text-center" cols="30" rows="10"></textarea>
+                <input type="text" id="input" placeholder="text">
                 <button class="btn btn-success" onclick="btn()">button</button>
             </div>
         </div>
@@ -67,7 +67,12 @@
 
 
     <!-- 4chi masala -->
-    
+    <div class="row">
+        <div class="col-md-9 offset-2 my-4">
+            <input type="file" id="file" />
+            <button onclick="showFileSize()" class="btn btn-primary">show file size</button>
+        </div>
+    </div>
 
 
 

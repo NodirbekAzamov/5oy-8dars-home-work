@@ -59,20 +59,43 @@ delete1.addEventListener("click", () => {
 
 // 3chi masala
 let textarea1 = document.getElementById('textarea1');
-let inp = document.createElement('inp');
+let inp = document.getElementById('input');
 
 const btn = () => {
     let textarea1_value = textarea1.value;
     let d = textarea1_value.split(' ');
+    let input = inp.value;
 
-    if (d.includes(inp)) {
+    if (d.includes(input)) {
         alert("soz bor")
-    } else  {
+    } else {
         alert("soz yo'q")
     }
+    console.log(input);
+    console.log(d);
 }
 
 
 
 
 // 4chi masala
+function showFileSize() {
+    let file = document.getElementById("file").files[0];
+    if (file) {
+        let item = Math.floor(file.size / 1024)
+        alert(item + " KB");
+    } else {
+        alert("select a file... duh");
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
